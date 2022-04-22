@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color:azure;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    
+}
+
+.padButton{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gray;
+    color:antiquewhite;
+    cursor: pointer;
+}
+
+.padButton:hover{
+    border: 1px solid white;
+}
+
+.grid{
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "dis dis dis dis"
+    "ac c div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal"
+    ;
+}
+
+.dis{
+    grid-area: dis;
+    background-color: black;
+    color: whitesmoke;
+    text-align: right;
+    padding : 0.5rem;
+}
+
+.dis input{
+    text-align: right;
+    background-color: black;
+    color: rgb(216, 216, 65);
+    border-style: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.total{
+    color: yellow;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.dark-gray{
+    background-color: #333;
+}
+
+.tomato{
+    background-color: tomato;
+}
+
+.equal{
+    grid-area: equal;
+    background-color: #5599ff;
+}
+
